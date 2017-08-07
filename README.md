@@ -16,14 +16,32 @@ $ composer require juniorb2ss/eloquent-uuid
 ## Eloquent Trait
 
 ```php
-
 use juniorb2ss\EloquentUuid\EloquentUuidTrait;
 
 class User extends Authenticatable
 {
     use Notifiable, EloquentUuidTrait;
-    //...
+    
+    /**
+    * UUID Column name used
+    * 
+    * @var string
+    * @optional 
+    */
+    protected $uuidKey = 'uuid';
 }
+```
+
+## UUID Column
+You need create new column in table model like `uuid` or custom name you can define in `uuidKey` model property
+
+## Scope On UUID
+
+```php
+use App\User;
+
+$user = (new User)->onUuid('aae5f3f1-0f22-4a8b-9291-d2a9649d1490')
+                  ->firstOrFail();
 ```
 
 ## Tests
