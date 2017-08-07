@@ -1,19 +1,13 @@
----
+exclude_paths:
+ - "tests"
 engines:
-  config:
-    languages:
-    - php
-  fixme:
+  phpcodesniffer:
     enabled: true
-  phpmd:
-    enabled: true
-    checks:
-      CleanCode/BooleanArgumentFlag:
-        enabled: false
-      Identical code:
-        enabled: false
+    config:
+      file_extensions: "php,inc,lib"
+      standard: "PSR1,PSR2,my_custom_php_ruleset.xml"
+      ignore_warnings: true
+      encoding: utf-8
 ratings:
   paths:
   - "**.php"
-exclude_paths:
-- tests/
