@@ -1,13 +1,5 @@
 exclude_paths:
  - "tests"
-engines:
-  phpcodesniffer:
-    enabled: true
-    config:
-      file_extensions: "php,inc,lib"
-      standard: "PSR1,PSR2,my_custom_php_ruleset.xml"
-      ignore_warnings: true
-      encoding: utf-8
 ratings:
   paths:
   - "**.php"
