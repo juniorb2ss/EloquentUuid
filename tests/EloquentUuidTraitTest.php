@@ -1,8 +1,8 @@
 <?php
 namespace juniorb2ss\EloquentUuid\Tests;
 
-use juniorb2ss\EloquentUuid\Tests\User;
 use juniorb2ss\EloquentUuid\Tests\TestCase;
+use juniorb2ss\EloquentUuid\Tests\User;
 
 class EloquentUuidTraitTest extends TestCase
 {

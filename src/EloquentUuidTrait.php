@@ -35,7 +35,7 @@ trait EloquentUuidTrait
      * @param \Illuminate\Database\Eloquent\Builder $query
      * @return \Illuminate\Database\Eloquent\Builder
      */
-    public function scopeOnUuid($q, $uuid)
+    public function scopeOnUuid($qquery, $uuid)
     {
         return $q->where(
             $this->getUuidColumn(),
