@@ -10,7 +10,7 @@ The `juniorb2ss/eloquent-uuid` provider a simple trait to implement UUID to ORM.
 You can install this package via composer:
 
 ``` bash
-$ composer require juniorb2ss/eloquent-uuid
+$ composer require juniorb2ss/eloquent-uuid~1.*
 ```
 
 ## Eloquent Trait
