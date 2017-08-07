@@ -1,0 +1,41 @@
+{
+    "name": "juniorb2ss/eloquent-uuid",
+    "description": "Trait to implement UUID in Eloquent ORM",
+    "type": "laravel, library, eloquent, uuid, bd",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Carlos Eduardo",
+            "email": "juniorb2ss@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "ramsey/uuid": "^3.4",
+        "illuminate/support": "~4|~5",
+        "orchestra/database": "^3.4"
+    },
+    "require-dev": {
+        "orchestra/testbench": "~3.0",
+        "phpunit/phpunit" : "~4.0||~5.0",
+        "squizlabs/php_codesniffer": "^2.3",
+        "doctrine/dbal": "~2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "juniorb2ss\\EloquentUuid\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "juniorb2ss\\EloquentUuid\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "coverage": "phpunit --coverage-text --coverage-clover=coverage.clover",
+        "check-style": "phpcs -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests",
+        "fix-style": "phpcbf -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests",
+        "build": "composer run check-style && composer run fix-style && composer run coverage"
+    }
+}
