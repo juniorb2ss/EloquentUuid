@@ -1,7 +1,7 @@
 {
     "name": "juniorb2ss/eloquent-uuid",
     "description": "Trait to implement UUID in Eloquent ORM",
-    "type": "laravel, library, eloquent, uuid, bd",
+    "type": "library",
     "license": "MIT",
     "authors": [
         {
