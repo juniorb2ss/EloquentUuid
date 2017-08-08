@@ -38,7 +38,7 @@ You need create new column in table model like `uuid` or custom name you can def
 ## Example
 ```php
 $fields = $request->only(['email', 'name', 'password']);
-$user = User::create($request->only($fields); // Creating user with auto-inject uuid field
+$user = User::create($fields); // Creating user with auto-inject uuid field
 
 dump($user->toArray());
 
