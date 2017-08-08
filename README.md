@@ -35,6 +35,22 @@ class User extends Authenticatable
 ## UUID Column
 You need create new column in table model like `uuid` or custom name you can define in `uuidKey` model property
 
+## Example
+```php
+$fields = $request->only(['email', 'name', 'password']);
+$user = User::create($request->only($fields); // Creating user with auto-inject uuid field
+
+dump($user->toArray());
+
+/*[
+    "id" => "1"
+    "uuid" => "723e4628-7c35-11e7-89b1-0242bfc0df57",
+    "name" => "Magdalena Zboncak"
+    "email" => "nitzsche.katherine@gulgowski.com"  
+  ]*/
+
+```
+
 ## Scope On UUID
 
 ```php
