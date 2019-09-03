@@ -16,7 +16,7 @@
     },
     "require-dev": {
         "orchestra/testbench": "~3.0",
-        "phpunit/phpunit" : "~4.0||~5.0",
+        "phpunit/phpunit" : "~4.0||~5.0||~6.0",
         "squizlabs/php_codesniffer": "^2.3",
         "doctrine/dbal": "~2.3",
         "orchestra/database": "^3.4"
